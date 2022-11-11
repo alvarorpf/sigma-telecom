@@ -1,0 +1,8 @@
+[submodule "addons-konos"]
+	path = addons-konos
+	url = git@github.com:dansanti/addons-konos.git
+	branch = 15.0_dev
+[submodule "facturacion_electronica"]
+	path = facturacion_electronica
+	url = https://gitlab.com/odoocoop/facturacion_electronica.git
+	branch = 15.0
