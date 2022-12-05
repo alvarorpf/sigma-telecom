@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+   <record model="ir.ui.view" id="view_hr_payslip_inherit_form4">
+            <field name="name">hr.payslip.inherit.form4</field>
+            <field name="model">hr.payslip</field>
+            <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form"/>
+            <field name="arch" type="xml">
+                <field name="paid" position="after">
+                    <field name="indicadores_id" required="1"/>
+                </field>
+                <field name="credit_note" position="replace">
+                    <field name="credit_note" invisible="1"/>
+                    <field name="movimientos_personal" String="Código Movimiento"/>
+                    <field name="date_start_mp" String="Inicio MP" attrs="{'invisible': [('movimientos_personal', '=', '0')]}"/>
+                    <field name="date_end_mp" String="Fin MP" attrs="{'invisible': [('movimientos_personal', '=', '0')]}"/>
+                </field>
+            </field>
+    </record>
+
+<!-- Reemplazamos para que solo aparezcan Empleados Activos -->
+        <record id="view_hr_payslip_by_employees" model="ir.ui.view">
+            <field name="name">hr_payroll_payslip_employees</field>
+            <field name="model">hr.payslip.employees</field>
+            <field name="arch" type="xml">
+                <form string="Payslips by Employees">
+                    <header>
+                        <button icon="fa-cogs" string="Generate" name="compute_sheet" type="object" class="oe_highlight"  />
+                    </header>
+                    <group>
+                        <span colspan="4" nolabel="1">This wizard will generate payslips for all selected employee(s) based on the dates and credit note specified on Payslips Run.</span>
+                    </group>
+                    <group colspan="4" >
+                        <separator string="Employees" colspan="4"/>
+                        <newline/>
+                        <field name="employee_ids" nolabel="1" filter_domain="[('employee_ids.contract_id.state','=','open')]"/>
+                    </group>
+               </form>
+            </field>
+        </record>
+
+
+    <!-- Payslip Line -->
+    <record id="view_hr_payslip_line_tree_inherit_1" model="ir.ui.view">
+        <field name="name">hr.payslip.line.tree.inherit</field>
+        <field name="model">hr.payslip.line</field>
+        <field name="inherit_id" ref="hr_payroll.view_hr_payslip_line_tree"/>
+        <field name="arch" type="xml">
+            <field name="rate" position="replace">
+               <field name="rate" invisible="1"/>
+            </field>
+        </field>
+    </record>
+
+    </data>
+</odoo>

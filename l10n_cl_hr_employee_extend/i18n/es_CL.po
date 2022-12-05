@@ -1,0 +1,289 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_cl_hr_employee_extend
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e-20190410\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-24 02:45+0000\n"
+"PO-Revision-Date: 2019-05-23 22:45-0400\n"
+"Last-Translator: Nelson Ramírez <info@konos.cl>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.2.1\n"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_emergency_contact__relation
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_employee_family__member_contact
+msgid "Contact No"
+msgstr "Nº Contacto"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,help:l10n_cl_hr_employee_extend.field_hr_emergency_contact__number
+msgid "Contact Number"
+msgstr "Número de Contacto"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_emergency_contact__create_uid
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_employee_family__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_emergency_contact__create_date
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_employee_family__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_employee_family__date_birth
+msgid "Date of Birth"
+msgstr "Fecha de nacimiento"
+
+#. module: l10n_cl_hr_employee_extend
+#: model_terms:ir.ui.view,arch_db:l10n_cl_hr_employee_extend.hr_employee_inherit_form_view
+msgid "Datos Generales"
+msgstr "Los generales"
+
+#. module: l10n_cl_hr_employee_extend
+#: model_terms:ir.ui.view,arch_db:l10n_cl_hr_employee_extend.hr_employee_inherit_form_view
+msgid "Datos RRHH"
+msgstr ""
+
+#. module: l10n_cl_hr_employee_extend
+#: selection:hr.employee.family,relation:0
+msgid "Daughter"
+msgstr "Hija"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_emergency_contact__display_name
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_employee_family__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_employee__emergency_contact
+#: model_terms:ir.ui.view,arch_db:l10n_cl_hr_employee_extend.hr_employee_inherit_form_view
+msgid "Emergency Contact"
+msgstr "Contacto de emergencia"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model,name:l10n_cl_hr_employee_extend.model_hr_employee
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_employee_family__employee_id
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_emergency_contact__employee_obj
+msgid "Employee Obj"
+msgstr "Empleado Obj"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,help:l10n_cl_hr_employee_extend.field_hr_employee__id_expiry_date
+msgid "Expiry date of Identification ID"
+msgstr "Fecha de Caducidad de Identificación"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,help:l10n_cl_hr_employee_extend.field_hr_employee__passport_expiry_date
+msgid "Expiry date of Passport ID"
+msgstr "Fecha de Caducidad del Pasaporte"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_employee__fam_ids
+#: model_terms:ir.ui.view,arch_db:l10n_cl_hr_employee_extend.hr_employee_inherit_form_view
+msgid "Family"
+msgstr "Familia"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,help:l10n_cl_hr_employee_extend.field_hr_employee__fam_ids
+#: model_terms:ir.ui.view,arch_db:l10n_cl_hr_employee_extend.hr_employee_inherit_form_view
+msgid "Family Information"
+msgstr "Información de la familia"
+
+#. module: l10n_cl_hr_employee_extend
+#: selection:hr.employee.family,relation:0
+msgid "Father"
+msgstr "Padre"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model,name:l10n_cl_hr_employee_extend.model_hr_emergency_contact
+msgid "HR Emergency Contact"
+msgstr "HR Contacto de Emergencia"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.actions.server,name:l10n_cl_hr_employee_extend.employee_data_reminder_ir_actions_server
+#: model:ir.cron,cron_name:l10n_cl_hr_employee_extend.employee_data_reminder
+#: model:ir.cron,name:l10n_cl_hr_employee_extend.employee_data_reminder
+msgid "HR Employee Data Expiration"
+msgstr "Vencimiento de datos de empleados HR"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model,name:l10n_cl_hr_employee_extend.model_hr_employee_family
+msgid "HR Employee Family"
+msgstr "HR Familia del Empleado"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.ui.menu,name:l10n_cl_hr_employee_extend.menu_hr_management
+msgid "HR Management"
+msgstr "Gestión de RR.HH"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_emergency_contact__id
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_employee_family__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_employee__id_attachment_id
+msgid "ID Attachment"
+msgstr "ID Adjunto"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_employee__id_expiry_date
+msgid "ID Expiry Date"
+msgstr "ID Fecha de Caducidad"
+
+#. module: l10n_cl_hr_employee_extend
+#: code:addons/l10n_cl_hr_employee_extend/models/hr_employee.py:88
+#, python-format
+msgid "ID-%s Expired On %s"
+msgstr "ID- %s caducado en %s"
+
+#. module: l10n_cl_hr_employee_extend
+#: model_terms:ir.ui.view,arch_db:l10n_cl_hr_employee_extend.hr_employee_inherit_form_view
+msgid "Identification ID"
+msgstr "ID de identificación"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,help:l10n_cl_hr_employee_extend.field_hr_employee_family__employee_ref
+msgid "If family member currently is an employee of same company, then please tick this field"
+msgstr "Si el miembro de la familia actualmente es un empleado de la misma compañía, marque este campo"
+
+#. module: l10n_cl_hr_employee_extend
+#: model_terms:ir.ui.view,arch_db:l10n_cl_hr_employee_extend.hr_employee_inherit_form_view
+msgid "Información Privada"
+msgstr ""
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_employee_family__employee_ref
+msgid "Is Employee"
+msgstr "Es Empleado"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_employee__joining_date
+msgid "Joining Date"
+msgstr "Fecha de Ingreso"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_emergency_contact____last_update
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_employee_family____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_emergency_contact__write_uid
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_employee_family__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_emergency_contact__write_date
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_employee_family__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_employee__personal_mobile
+msgid "Mobile"
+msgstr "Móvil"
+
+#. module: l10n_cl_hr_employee_extend
+#: selection:hr.employee.family,relation:0
+msgid "Mother"
+msgstr "Madre"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_employee_family__member_name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_emergency_contact__number
+msgid "Number"
+msgstr "Número"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_employee__passport_attachment_id
+msgid "Passport Attachment"
+msgstr "Adjunto de Pasaporte"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_employee__passport_expiry_date
+msgid "Passport Expiry Date"
+msgstr "Fecha de Vencimiento del Pasaporte"
+
+#. module: l10n_cl_hr_employee_extend
+#: model_terms:ir.ui.view,arch_db:l10n_cl_hr_employee_extend.hr_employee_inherit_form_view
+msgid "Passport ID"
+msgstr "Pasaporte"
+
+#. module: l10n_cl_hr_employee_extend
+#: code:addons/l10n_cl_hr_employee_extend/models/hr_employee.py:102
+#, python-format
+msgid "Passport-%s Expired On %s"
+msgstr "Pasaporte- %s caducado en %s"
+
+#. module: l10n_cl_hr_employee_extend
+#: model_terms:ir.ui.view,arch_db:l10n_cl_hr_employee_extend.hr_employee_inherit_form_view
+msgid "RUN / Nº Id"
+msgstr "RUN/N º ID"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,help:l10n_cl_hr_employee_extend.field_hr_emergency_contact__relation
+#: model:ir.model.fields,help:l10n_cl_hr_employee_extend.field_hr_employee_family__relation
+msgid "Relation with employee"
+msgstr "Relación con el empleado"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,field_description:l10n_cl_hr_employee_extend.field_hr_employee_family__relation
+msgid "Relationship"
+msgstr "Relación"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.ui.menu,name:l10n_cl_hr_employee_extend.employee_report_menu
+msgid "Reports"
+msgstr "Informes"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,help:l10n_cl_hr_employee_extend.field_hr_employee_family__employee_id
+msgid "Select corresponding Employee"
+msgstr "Seleccione el empleado correspondiente"
+
+#. module: l10n_cl_hr_employee_extend
+#: selection:hr.employee.family,relation:0
+msgid "Son"
+msgstr "Hijo"
+
+#. module: l10n_cl_hr_employee_extend
+#: selection:hr.employee.family,relation:0
+msgid "Wife"
+msgstr "Esposa"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,help:l10n_cl_hr_employee_extend.field_hr_employee__passport_attachment_id
+msgid "You can attach the copy of Passport"
+msgstr "Puede adjuntar la copia de Passport"
+
+#. module: l10n_cl_hr_employee_extend
+#: model:ir.model.fields,help:l10n_cl_hr_employee_extend.field_hr_employee__id_attachment_id
+msgid "You can attach the copy of your Id"
+msgstr "Puede adjuntar la copia de su ID"
