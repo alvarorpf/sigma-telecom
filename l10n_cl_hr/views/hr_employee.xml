@@ -9,9 +9,9 @@
                 <field name="type_id" required="1"/>
             </xpath>
 
-<!--            <xpath expr="//label[@for='name']" position="attributes">-->
-<!--                <attribute name="invisible">1</attribute>-->
-<!--            </xpath>-->
+            <!--            <xpath expr="//label[@for='name']" position="attributes">-->
+            <!--                <attribute name="invisible">1</attribute>-->
+            <!--            </xpath>-->
             <xpath expr="//field[@name='name']" position="attributes">
                 <attribute name="invisible">1</attribute>
                 <attribute name="no_label">1</attribute>
@@ -19,22 +19,28 @@
             </xpath>
 
             <xpath expr="//field[@name='name']/.." position="after">
-                <label for="firstname" class="oe_edit_only"/>
-                    <h1>
-                        <field name="firstname" required="1"/>
-                    </h1>
-                <label for="middle_name" class="oe_edit_only"/>
-                	<h1>
-                    	<field name="middle_name"/>
-                 	</h1>
-                <label for="last_name" class="oe_edit_only"/>
-                	<h1>
-                    	<field name="last_name" required="1"/>
-                 	</h1>
-                <label for="mothers_name" class="oe_edit_only"/>
-                	<h1>
-                    	<field name="mothers_name"/>
-                 	</h1>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="firstname"/>
+                        <h1>
+                            <field name="firstname" required="1"/>
+                        </h1>
+                        <label for="middle_name"/>
+                        <h1>
+                            <field name="middle_name"/>
+                        </h1>
+                    </div>
+                    <div class="col-6">
+                        <label for="last_name"/>
+                        <h1>
+                            <field name="last_name" required="1"/>
+                        </h1>
+                        <label for="mothers_name" string="Apellido Materno"/>
+                        <h1>
+                            <field name="mothers_name"/>
+                        </h1>
+                    </div>
+                </div>
             </xpath>
             <xpath expr="//field[@name='resource_calendar_id']" position="replace">
                 <field name="resource_calendar_id" select="hr_resource_monthly_cl"/>
@@ -54,7 +60,6 @@
             </xpath>
         </field>
     </record>
-
 
 
 </odoo>
