@@ -2,7 +2,7 @@
 <odoo>
 	<!-- menus principales bajo en menu Nominas -->
 	<menuitem id="menu_cl_hr_payroll_base" name="Nómina RRHH"
-		parent="hr_payroll.menu_hr_payroll_root" sequence="2"
+		parent="hr_work_entry_contract_enterprise.menu_hr_payroll_root" sequence="2"
 		groups="hr_payroll.group_hr_payroll_user" />
 
 	<menuitem id="menu_cl_hr_payroll_addons"
@@ -10,36 +10,40 @@
 		sequence="3" />
 
 	<menuitem id="menu_cl_hr_payroll_indicators" name="Previsión"
-		parent="hr_payroll.menu_hr_payroll_root" sequence="4"
+		parent="hr_work_entry_contract_enterprise.menu_hr_payroll_root" sequence="4"
 		groups="hr_payroll.group_hr_payroll_user" />
 
 	<menuitem id="menu_cl_hr_payroll_master_data"
-		name="Master Data" parent="hr_payroll.menu_hr_payroll_root"
+		name="Master Data" parent="hr_work_entry_contract_enterprise.menu_hr_payroll_root"
 		sequence="5" groups="hr_payroll.group_hr_payroll_user" />
 
 	<menuitem id="menu_cl_hr_payroll_reports" name="Reports"
-		parent="hr_payroll.menu_hr_payroll_root" sequence="6"
+		parent="hr_work_entry_contract_enterprise.menu_hr_payroll_root" sequence="6"
 		groups="hr_payroll.group_hr_payroll_user" />
 
 	<menuitem id="menu_cl_hr_payroll_configuration"
 		name="Chilean Configuration"
-		parent="hr_payroll.menu_hr_salary_configuration" sequence="101"
+		parent="hr_work_entry_contract_enterprise.menu_hr_payroll_configuration" sequence="101"
 		groups="hr_payroll.group_hr_payroll_user" />
 
 	<!-- submenus -->
-	<menuitem id="hr_menu_contract"
+	<menuitem id="hr_menu_contract" name="Contratos"
 		action="hr_contract.action_hr_contract"
-		parent="hr_payroll.menu_hr_payroll_root" sequence="1"
+		parent="hr_work_entry_contract_enterprise.menu_hr_payroll_root" sequence="1"
 		groups="hr_contract.group_hr_contract_manager" />
 
 	<!-- mover menus de nominas y registros de nominas a un menu principal -->
-<!--	<record id="hr_payroll.menu_department_tree" model="ir.ui.menu">-->
-<!--		<field name="parent_id" ref="menu_cl_hr_payroll_base" />-->
-<!--	</record>-->
+	<record id="hr_payroll.menu_hr_payroll_employee_payslips" model="ir.ui.menu">
+		<field name="parent_id" ref="menu_cl_hr_payroll_base" />
+	</record>
 
-<!--	<record id="hr_payroll.menu_hr_payslip_run" model="ir.ui.menu">-->
-<!--		<field name="parent_id" ref="menu_cl_hr_payroll_base" />-->
-<!--	</record>-->
+	<record id="hr_payroll.menu_hr_payslip_run" model="ir.ui.menu">
+		<field name="parent_id" ref="menu_cl_hr_payroll_base" />
+	</record>
+
+	<record id="hr_payroll.menu_hr_payroll_employees_root" model="ir.ui.menu">
+		<field name="active">False</field>
+	</record>
 
 	<!-- Menu DATOS MAESTROS -->
 	<menuitem id="cl_hr_menu_hr_job_tree"

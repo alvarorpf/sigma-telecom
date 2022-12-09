@@ -6,6 +6,7 @@
     'depends': [
             'hr_payroll',
             'hr_payroll_account',
+            'hr_work_entry_contract_enterprise'
         ],
     'external_dependencies': {
         'python': [
